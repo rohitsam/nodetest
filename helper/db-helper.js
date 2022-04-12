@@ -6,7 +6,7 @@ const connectToDatabase = async () => {
   try {
     if (!cachedConnection) {
       const connection = await MongoClient.connect(
-        "mongodb+srv://rohitsam:vdtJcKuVhVvPXNvn@cluster0.cbuzx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        "MONGODB URI"
       );
       if (connection) {
         cachedConnection = connection;
